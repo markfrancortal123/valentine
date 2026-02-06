@@ -19,15 +19,12 @@ function handleNoClick() {
     const gif = document.querySelector('.gif_container img');
 
     // Change GIF to sad GIF
-    gif.src = "https://tenor.com/view/sad-gif-17643179580660455968";
+    gif.src = "https://media.giphy.com/media/14uQ3cOFteDaU/giphy.gif";
 
-    // Reset previous animations
-    gif.classList.remove("fade-in", "shake");
+    // Optional: fade-in animation
+    gif.classList.remove("fade-in");
     void gif.offsetWidth; // force reflow
-
-    // Add fade-in and shake
     gif.classList.add("fade-in");
-    setTimeout(() => gif.classList.add("shake"), 100);
 
     // Update No button text
     noButton.textContent = messages[messageIndex];
