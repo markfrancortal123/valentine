@@ -6,6 +6,7 @@ body {
     margin: 0;
     background-color: #f9e3e3;
     font-family: 'Arial', sans-serif;
+    flex-direction: column;
 }
 
 .container {
@@ -15,6 +16,7 @@ body {
 .header_text {
     font-size: 3em;
     color: #d32f2f;
+    margin-bottom: 20px;
 }
 
 .gif_container img {
@@ -22,13 +24,29 @@ body {
     max-width: 500px; 
     height: auto; 
     border-radius: 10px;
-    margin-top: 20px;
+    margin-top: 10px;
+    transition: transform 0.5s ease;
 }
 
 .message_text {
-    font-family: 'Arial', sans-serif;
-    font-size: 2em;
+    font-size: 1.8em;
     color: #d32f2f;
     margin-top: 20px;
-    text-align: center;
+}
+
+.back-button {
+    margin-top: 20px;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.back-button:hover {
+    transform: scale(1.1);
+    background-color: #45a049;
 }
