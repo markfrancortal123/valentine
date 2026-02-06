@@ -30,10 +30,10 @@ function handleNoClick() {
     noButton.textContent = messages[messageIndex];
     messageIndex = (messageIndex + 1) % messages.length;
 
-    // Increase Yes button size VERY FAST
+    // Make Yes button grow SUPER fast
     const currentSize = parseFloat(window.getComputedStyle(yesButton).fontSize);
-    let newSize = currentSize + 25; // grow 25px per click
-    if (newSize > 300) newSize = 300; // max size cap (optional)
+    let newSize = currentSize * 1.5; // grow 50% per click
+    if (newSize > 600) newSize = 600; // very large max size
     yesButton.style.fontSize = `${newSize}px`;
 }
 
