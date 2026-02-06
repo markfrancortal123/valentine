@@ -30,10 +30,15 @@ h1 {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: transform 0.2s ease, font-size 0.2s ease;
 }
 
 .yes-button {
     background-color: #4caf50;
+}
+
+.yes-button:hover {
+    transform: scale(1.1);
 }
 
 .no-button {
