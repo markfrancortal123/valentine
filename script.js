@@ -19,9 +19,9 @@ function handleNoClick() {
     const gif = document.querySelector('.gif_container img');
 
     // Change GIF to sad GIF
-    gif.src = "https://media.tenor.com/9NkqWd2xGiAAAAAj/sad.gif";
+    gif.src = "https://media.tenor.com/_brRB_jf-gIAAAAi/dog.gif";
 
-    // Optional: fade-in animation
+    // Fade-in effect
     gif.classList.remove("fade-in");
     void gif.offsetWidth; // force reflow
     gif.classList.add("fade-in");
@@ -30,9 +30,9 @@ function handleNoClick() {
     noButton.textContent = messages[messageIndex];
     messageIndex = (messageIndex + 1) % messages.length;
 
-    // Make Yes button bigger
+    // Slightly increase Yes button size
     const currentSize = parseFloat(window.getComputedStyle(yesButton).fontSize);
-    yesButton.style.fontSize = `${currentSize * 1.5}px`;
+    yesButton.style.fontSize = `${currentSize * 1.1}px`;
 }
 
 function handleYesClick() {
